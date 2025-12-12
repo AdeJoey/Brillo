@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent-red: var(--accent-red);
+  --color-accent-dark-red: var(--accent-dark-red);
+  --font-sans: var(--font-helvetica);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent-red: #ee3900;
+  --accent-dark-red: #57090f;
+  --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-helvetica);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Custom Utilities if needed */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
