@@ -39,7 +39,7 @@ export default function BrandSystems() {
                     viewport={{ once: true }}
                     className="text-5xl md:text-8xl font-bold tracking-tighter uppercase leading-[0.85]"
                 >
-                    <div className="text-accent-dark-red">RELOAD DESIGNS MAKE</div>
+                    <div className="text-accent-dark-red">BRILLO DESIGNS MAKE</div>
                     <div className="text-accent-dark-red flex justify-center items-center gap-4">
                         BRAND SYSTEMS
                         <span className="w-20 h-10 md:w-32 md:h-14 rounded-full overflow-hidden relative inline-block border-2 border-accent-red">
@@ -52,7 +52,7 @@ export default function BrandSystems() {
                 </motion.h2>
 
                 <div className="max-w-md mx-auto mt-10 text-xs text-neutral-600 font-medium leading-relaxed tracking-wide text-center">
-                    Reload builds brands that cut through noise, challenge clichés, and actually sell. We combine identity, strategy, and story — all in one.
+                    Brillo builds brands that cut through noise, challenge clichés, and actually sell. We combine identity, strategy, and story — all in one.
                 </div>
             </div>
 

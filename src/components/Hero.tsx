@@ -91,7 +91,7 @@ export default function Hero() {
                             </div>
                         </motion.div>
 
-                        {/* Card 2: Reload */}
+                        {/* Card 2: Brillo */}
                         <motion.div
                             initial={{ y: 20, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
@@ -102,7 +102,7 @@ export default function Hero() {
                             <div className="absolute inset-0 bg-gradient-to-t from-[#57090f] to-transparent mix-blend-overlay opacity-80" />
 
                             <div className="relative z-10 flex justify-between items-start w-full">
-                                <span className="text-lg font-medium leading-none tracking-tight">Reload <br /> your brand</span>
+                                <span className="text-lg font-medium leading-none tracking-tight">Brillo <br /> your brand</span>
                                 <Target size={18} className="text-white/80" />
                             </div>
                             <div className="relative z-10 text-[10px] text-white/60 leading-relaxed font-normal">
