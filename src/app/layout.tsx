@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Brillo",
+  title: "Brillo | Design Agency",
   description: "Creative Branding Agency",
 };
 
