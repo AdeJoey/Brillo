@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VisualStatements() {
     return (
@@ -64,9 +65,11 @@ export default function VisualStatements() {
                                 world's <span className="border border-white/30 rounded-full px-2 italic">leading</span> <br />
                                 designers
                             </h3>
-                            <button className="absolute bottom-4 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-red hover:scale-125 transition-transform duration-300">
-                                <ArrowUpRight size={20} />
-                            </button>
+                            <Link href="/cases">
+                                <button className="absolute bottom-4 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-red hover:scale-125 transition-transform duration-300">
+                                    <ArrowUpRight size={20} />
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -82,10 +85,12 @@ export default function VisualStatements() {
                         />
                     </div>
                     <div className="mt-8">
-                        <button className="w-full py-4 rounded-full border border-neutral-300 flex items-center justify-between px-8 group-hover:bg-black group-hover:text-white transition-all uppercase text-xs font-bold tracking-widest">
-                            <span>EXPLORE NOW</span>
-                            <ArrowUpRight size={18} />
-                        </button>
+                        <Link href="/cases">
+                            <button className="w-full py-4 rounded-full border border-neutral-300 flex items-center justify-between px-8 group-hover:bg-black group-hover:text-white transition-all uppercase text-xs font-bold tracking-widest">
+                                <span>EXPLORE NOW</span>
+                                <ArrowUpRight size={18} />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
