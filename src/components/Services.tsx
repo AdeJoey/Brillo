@@ -3,6 +3,7 @@
 import anime from "animejs";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
@@ -95,27 +96,29 @@ export default function Services() {
                         key={index}
                         ref={el => { cardsRef.current[index] = el }}
                         onMouseEnter={() => handleMouseEnter(index)}
-                        className="relative w-full md:w-1/4 h-full bg-neutral-900 rounded-3xl overflow-hidden cursor-pointer shadow-lg"
+                        className="relative w-full md:w-1/4 h-full bg-neutral-900 rounded-3xl overflow-hidden cursor-pointer shadow-lg group"
                     >
-                        <Image
-                            src={service.image}
-                            alt={service.title}
-                            fill
-                            className="object-cover opacity-80"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
+                        <Link href="/services" className="block w-full h-full">
+                            <Image
+                                src={service.image}
+                                alt={service.title}
+                                fill
+                                className="object-cover opacity-80"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
 
-                        <div className="absolute top-6 left-6 border border-white/30 rounded-full px-4 py-1 text-[10px] text-white uppercase tracking-wider backdrop-blur-sm">
-                            {service.label}
-                        </div>
-
-                        <div className="absolute bottom-8 left-6 text-white w-full pr-6">
-                            <h3 className="text-3xl font-medium leading-none mb-2 md:text-2xl lg:text-3xl break-words">{service.title}</h3>
-                            <div className="flex justify-between items-end mt-4 border-t border-white/20 pt-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                <p className="text-white/60 text-xs">{service.subtitle}</p>
-                                <ArrowUpRight size={16} />
+                            <div className="absolute top-6 left-6 border border-white/30 rounded-full px-4 py-1 text-[10px] text-white uppercase tracking-wider backdrop-blur-sm">
+                                {service.label}
                             </div>
-                        </div>
+
+                            <div className="absolute bottom-8 left-6 text-white w-full pr-6">
+                                <h3 className="text-3xl font-medium leading-none mb-2 md:text-2xl lg:text-3xl break-words">{service.title}</h3>
+                                <div className="flex justify-between items-end mt-4 border-t border-white/20 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-white/60 text-xs">{service.subtitle}</p>
+                                    <ArrowUpRight size={16} />
+                                </div>
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>

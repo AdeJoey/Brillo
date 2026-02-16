@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import Footer from "@/components/Footer";
+
 export const metadata: Metadata = {
   title: "Brillo | Design Agency",
   description: "Creative Branding Agency",
@@ -18,6 +20,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

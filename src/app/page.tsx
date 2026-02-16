@@ -1,10 +1,10 @@
 "use client";
 
 import BrandSystems from "../components/BrandSystems";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
 import VisualStatements from "../components/VisualStatements";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <BrandSystems />
       <Services />
       <VisualStatements />
-      <Footer />
+      <Testimonials />
     </main>
   );
 }
