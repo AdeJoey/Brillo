@@ -35,7 +35,7 @@ export default function Hero() {
                         <h1 className="text-3xl md:text-4xl font-normal leading-[1.1] md:leading-[0.9] tracking-tight text-white mix-blend-difference max-w-[200px] md:max-w-none">
                             SOURCE <span className="md:hidden"> </span><br className="hidden md:block" />
                             OF BOLD <span className="md:hidden"> </span><br className="hidden md:block" />
-                            IDEAS/
+                            IDEAS
                         </h1>
 
                         <p className="text-white/70 text-[10px] md:text-xs max-w-[200px] leading-relaxed font-medium md:max-w-[150px] mt-2 md:mt-0">
